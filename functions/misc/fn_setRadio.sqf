@@ -45,10 +45,6 @@ if (!_swDisabled) then {
 	}  forEach TFD_ORBAT;
 };
 
-if (usingEstablishingShot) then {
-	waitUntil {!isNil "BIS_fnc_establishingShot_playing" && {!BIS_fnc_establishingShot_playing}}; // Wait until establishing shot has stopped playing
-};
-
 if (_showMissionStartHint) then {
 	[_swDisabled] spawn TFD_fnc_missionStartHint;
 };
