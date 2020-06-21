@@ -1,13 +1,7 @@
 # TFD_JEBUS_VCOM Framework
 Cut down TFD framework featuring JEBUS & VCOM AI as core.
 
-Welcome to the TFD Framework, Admins please vet and check code prior to addition, and before merging into master framework copy on github.
-
-Mission makers please make changes you think will benefit the community add scripts you think will be useful.
-
-Read below for complete changelog history.
-
-### 31/05/2020 (Slato's Change)
+### 21/06/2020 (Slato's Change)
 
 - Removed default insignia.
 - Added VCOM AI (3.4.0-develop branch).
