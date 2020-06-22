@@ -6,6 +6,7 @@ class TFD
 		class missionStartHint {};
 		class setRadio {};
 		class tfar {};
+		class assignGroup {};
 		class WerthlesHeadless {};
 	};
 };
