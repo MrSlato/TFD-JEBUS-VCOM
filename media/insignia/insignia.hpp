@@ -1,4 +1,5 @@
-/*class TFDLogo
+/*
+class TFDLogo
 {
 	displayName = "TFD Emblem"; // Name displayed in Arsenal
 	author = "Imperator"; // Author displayed in Arsenal

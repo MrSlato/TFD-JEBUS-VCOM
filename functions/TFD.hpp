@@ -7,6 +7,5 @@ class TFD
 		class setRadio {};
 		class tfar {};
 		class assignGroup {};
-		class WerthlesHeadless {};
 	};
 };
