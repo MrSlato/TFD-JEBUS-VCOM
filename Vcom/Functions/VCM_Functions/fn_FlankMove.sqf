@@ -12,12 +12,10 @@
 		NOTHING
 */
 
-params ["_leader"];
+params ["_leader","_MedList"];
 
 private _grp = group _leader;
 if (_grp getVariable ["VCM_NOFLANK",false]) exitWith {};
-
-
 
 
 private _nearestEnemy = _leader findNearestEnemy _leader;
@@ -37,7 +35,7 @@ if (_knows < 2) exitwith
 	[_leader] spawn VCM_fnc_FlankMove;
 };
 
-
+if (getpos _nearestEnemy isEqualTo [0,0,0]) exitWith {};
 if !((waypointPosition [_grp,(currentWaypoint _grp)]) isEqualTo [0,0,0]) exitWith {};
 //If first waypoint is DESTROY, DO NOT change waypoints.
 private _index = currentWaypoint _grp;
@@ -62,7 +60,7 @@ if (count _AssignedWaypoints > 0) then
 {
 	//If the waypoint is 2 minutes old, remove it from the group.
 	{
-		if ((_x#1) > (servertime - 120)) then
+		if ((_x#1) > (diag_ticktime - 120)) then
 		{
 			_wayPointTypes = _wayPointTypes - [_x#0];
 		}
@@ -79,8 +77,10 @@ if (count _wayPointTypes isEqualTo 0) then
 };
 
 private _WayPointType = selectRandom _waypointTypes;
-_AssignedWaypoints pushback [_waypointtype,serverTime];
+_AssignedWaypoints pushback [_waypointtype,diag_ticktime];
 _EnemyGroup setVariable ["VCM_WAYPOINTS",_AssignedWaypoints,true];
+
+if ((getpos _nearestEnemy) isEqualTo [0,0,0]) exitWith {};
 
 switch (_wayPointType) do {
     case "Assault": 

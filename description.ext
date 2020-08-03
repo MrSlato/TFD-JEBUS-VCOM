@@ -4,6 +4,8 @@ respawn = "BASE";
 respawndelay = 999999999;
 respawnTemplates[] = {"Spectator","EndMission"};
 
+allowFunctionsRecompile = 1;
+
 //Advanced Flight Model - 0 = Player choice, 1 = Force on, 2 = Force off
 forceRotorLibSimulation = 0;
 

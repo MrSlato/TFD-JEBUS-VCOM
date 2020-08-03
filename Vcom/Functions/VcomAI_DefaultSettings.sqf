@@ -19,6 +19,7 @@ Vcm_Settings =
 	VCM_ARTYENABLE = true; //Enable improved artillery handling from Vcom.
 	VCM_ARTYLST = []; //List of all AI inside of artillery pieces, leave this alone.
 	VCM_ARTYDELAY = 60; //Delay between squads requesting artillery
+	VCM_MEDICALACTIVE = true; // AI will heal themselves, and medics will heal others in their squad.
 	VCM_ARTYWT = -(VCM_ARTYDELAY);
 	VCM_ARTYET = -(VCM_ARTYDELAY);
 	VCM_ARTYRT = -(VCM_ARTYDELAY);
@@ -50,6 +51,9 @@ Vcm_Settings =
 	Vcm_PlayerAISkills = true; //AI in a group, that a players leads, can have their skills changed separately.
 	Vcm_GrenadeChance = 10; //Chance the AI will throw a grenade.
 	Vcm_SmokeChance = 10; //Chance the AI will throw a smoke grenade.
+	Vcm_AI_EM = true; //Will the AI use enhanced movement to navigate around.
+	Vcm_AI_EM_CHN = 10; //Chance a group will attempt to jump over an obstacle  - every 0.5 secs
+	VCM_AI_EM_CLDWN = 10; //Time in seconds before a group will consider jumping over obstacles;
 	
 	//AI SKILL SETTINGS HERE!!!!!!!!!!!!
 	//LOW DIFFICULTY
