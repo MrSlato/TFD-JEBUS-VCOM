@@ -16,24 +16,23 @@ _groupData params [
 	,"_waypoints"
 ];
 
- _newGroup = createGroup _unitSide;
+_newGroup = createGroup _unitSide;
+waitUntil {!isNull _newGroup};
 
 {
 	_relativePos = (_x # 1) vectorDiff (_vehicleData # 0 # 1);
 	_newVehiclePosition = _spawnPos vectorAdd _relativePos;
 	_newVehicle = [_x, _newGroup, _newVehiclePosition, _special] call jebus_fnc_spawnVehicle;
-	waitUntil {alive _newVehicle};
 }forEach _vehicleData;
  
 {
 	private "_relativePos";
-	
+		
 	if (_vehicleData isEqualTo []) then {
 		_relativePos = (_x # 1) vectorDiff (_infantryData # 0 # 1);
 	} else {
 		_relativePos = (_x # 1) vectorDiff (_vehicleData # 0 # 1);	
 	};
-	
 	_newUnitPosition = _spawnPos vectorAdd _relativePos;
 	[_x, _newGroup, _newUnitPosition] call jebus_fnc_spawnUnit;
 }forEach _infantryData;
