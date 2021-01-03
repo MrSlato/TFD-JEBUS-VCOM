@@ -1,6 +1,12 @@
 # TFD_JEBUS_VCOM Framework
 Cut down TFD framework featuring JEBUS & VCOM AI as core.
 
+### 03/01/2020 (TFAR -> ACRE)
+
+- Copied the TFD 2021 Framework
+- AGAIN removed ALL references to DAC
+- Removed unused scripts.
+
 ### 21/06/2020 (Slato's Change)
 
 - Removed default insignia.
@@ -187,7 +193,6 @@ CBA Settings updated to a standard file for medical settings and general setting
 
 ### 24/08/2015 - Imperator
 - Large amounts of changes/re-jigging of previous framework primarily to accommodate the return to TFAR and to make rookie user friendly.
-
 
 
 

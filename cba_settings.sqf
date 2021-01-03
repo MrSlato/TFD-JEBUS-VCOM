@@ -407,6 +407,42 @@ force ace_zeus_revealMines = 0;
 force ace_zeus_zeusAscension = false;
 force ace_zeus_zeusBird = false;
 
+// ACRE2
+force acre_sys_core_automaticAntennaDirection = true;
+force acre_sys_core_defaultRadioVolume = 0.8;
+force acre_sys_core_fullDuplex = true;
+acre_sys_core_godVolume = 1;
+force acre_sys_core_ignoreAntennaDirection = true;
+force acre_sys_core_interference = true;
+acre_sys_core_postmixGlobalVolume = 1;
+acre_sys_core_premixGlobalVolume = 1;
+force acre_sys_core_revealToAI = 1;
+acre_sys_core_spectatorVolume = 1;
+force acre_sys_core_terrainLoss = 1;
+force acre_sys_core_ts3ChannelName = "ACRE";
+force acre_sys_core_ts3ChannelPassword = "";
+force acre_sys_core_ts3ChannelSwitch = true;
+acre_sys_core_unmuteClients = true;
+force acre_sys_signal_signalModel = 1;
+
+// ACRE2 Animations
+force radioAnims_cba_ads = true;
+force radioAnims_cba_Earpieces = "[""G_WirelessEarpiece_F""]";
+force radioAnims_cba_main = true;
+force radioAnims_cba_preference_Others = "Hand";
+force radioAnims_cba_preference_PRC148 = "Hand";
+force radioAnims_cba_preference_PRC152 = "Vest";
+force radioAnims_cba_preference_PRC343 = "Vest";
+force radioAnims_cba_preference_SEM52SL = "Vest";
+force radioAnims_cba_vehicles = true;
+force radioAnims_cba_vestarmor = true;
+force radioAnims_cba_vests = "[]";
+
+// ACRE2 Zeus
+force acre_sys_zeus_zeusCanSpectate = true;
+force acre_sys_zeus_zeusCommunicateViaCamera = true;
+force acre_sys_zeus_zeusDefaultVoiceSource = false;
+
 // CBA UI
 cba_ui_notifyLifetime = 4;
 cba_ui_StorePasswords = 1;

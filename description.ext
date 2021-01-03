@@ -1,39 +1,29 @@
-//Respawn settings configured to handle spectator mode
-//DO NOT CHANGE UNLESS YOU WISH TO USE RESPAWNS
-respawn = "BASE";
-respawndelay = 999999999;
-respawnTemplates[] = {"Spectator","EndMission"};
-
-allowFunctionsRecompile = 1;
-
-//Advanced Flight Model - 0 = Player choice, 1 = Force on, 2 = Force off
-forceRotorLibSimulation = 0;
-
-//Disable slot auto-assign
-joinUnassigned = 1;
-//Disable AI in player slots
-disabledAI = 1; 
+//VON Config
+//Don't disable all channels, as it will prevent admins from logging in
+disablechannels[]={
+	//Format: {channel, disableChat, disableVoice} - Change values to enable/disable channels
+	{0, false, true}, 	//Global
+	{1, false, true}, 	//Side
+	{2, true, true}, 	//Command
+	{3, false, true},	//Group
+	{4, true, true},	//Vehicle
+	{5, false, true}, 	//Direct
+	{6, false, true} 	//System
+};
 
 //Debug console
 enableDebugConsole[] = {
 	"76561198007514110",	//Atreus
-	"76561197974803128",  	//Mortified
 	"76561197996594471",	//Apex
 	"76561198005613267",	//Imperator
-	"76561198011140335",	//Tonny747
 	"76561198052511971",	//Skillet
-	"76561198107936410",	//Shifty
-	"76561197970267717", 	//Slato
-	"76561198053989444" 	//Nerfmanic
+	"76561198107936410", 	//Shifty
+	"76561198022954884",    //XURBAN
+	"76561198053989444", 	//Nerfmanic
+	"76561198359493926", 	//Yeet
+	"76561197970267717" 	//Slato
 };
 //Add your STEAMID in the same format to grant access to debug console in mission
-
-//Add custom unit insignias
-//To assign custom insignias to units, go to 'Identity' attribute using 3den Enhanced.
-class CfgUnitInsignia
-{
-	#include "media\insignia\insignia.hpp"
-};
 
 //Custom mission debriefs
 class CfgDebriefing
@@ -50,9 +40,12 @@ class CfgDebriefing
 		title = "Mission failed";
 		subtitle = "Example";
 		description = "Lorum Ipsum.";
-		pictureBackground = "media\load.jpg"
+		pictureBackground = "media\load.jpg";
 	};
 };
+//To call endings in missions using triggers/scripts use:
+//"END1" spawn BIS_fnc_endMissionServer;
+//Where 'END1' is the desired ending
 
 class CfgRemoteExec
 {
@@ -84,18 +77,23 @@ class CfgFunctions
 	#include "vcom\cfgFunctions.hpp"
 };
 
+//Add custom unit insignias
+//To assign custom insignias to units, see fn_setPatch.sqf in functions/misc.
+class CfgUnitInsignia
+{
+	#include "media\insignia\insignia.hpp"
+};
+
 //Admin Panel Defines
 #include "adminpanelmk2\dialogs.hpp"
 
-//Headless client setting - please do not adjust this.
-class Params
-{
-	class HeadlessClient
-	{
-		title = "Headless Client";
-		values[]= {0,1};
-		texts[] = {"OFF","ON"};
-		default = 0;
-	};
-};
+//Respawn settings configured to handle spectator mode
+//DO NOT CHANGE UNLESS YOU WISH TO USE RESPAWNS
+respawn = "BASE";
+respawndelay = 999999999;
+respawnTemplates[] = {"Spectator","EndMission"};
 
+//Disable slot auto-assign
+joinUnassigned = 1;
+//Disable AI in player slots
+disabledAI = 1; 

@@ -1,11 +1,13 @@
 class TFD
 {
-	class missionResource
+	class core
 	{
-		file = "functions\misc";
+		file = "functions\core";
 		class missionStartHint {};
 		class setRadio {};
-		class tfar {};
+		class WerthlesHeadless {};
 		class assignGroup {};
+		class unitRoster {};
+		class assignChannels {};
 	};
 };
