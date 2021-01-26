@@ -72,7 +72,7 @@ class Extended_PreInit_EventHandlers {
 class CfgFunctions
 {
 	#include "functions\TFD.hpp"
-	#include "adminpanelmk2\functions\APMK2.hpp"
+	#include "adminpanel\CfgFunctions.hpp"
 	#include "jebus\cfgFunctions.hpp"
 	#include "vcom\cfgFunctions.hpp"
 };
@@ -85,7 +85,7 @@ class CfgUnitInsignia
 };
 
 //Admin Panel Defines
-#include "adminpanelmk2\dialogs.hpp"
+#include "adminpanel\ui\dialog.hpp"
 
 //Respawn settings configured to handle spectator mode
 //DO NOT CHANGE UNLESS YOU WISH TO USE RESPAWNS

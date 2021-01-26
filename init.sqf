@@ -21,6 +21,9 @@ TFD_ORBAT = [
 [true, true, false] spawn TFD_fnc_setRadio;
 
 
+// Initialise TFD admin panel
+[] spawn admp_fnc_init;
+
 //Saving disabled without autosave.
 enableSaving [false,false]; 
 

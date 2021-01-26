@@ -6,6 +6,9 @@
 //Execute the intro (comment out to remove intro)
 [] execVM "scripts\intro.sqf";
 
+// Setup admin panel
+[] spawn admp_fnc_playerSetup;
+
 //== Misc =============================================================
 
 // Remove comment to increase vehicle fuel consumption to make logistics useful

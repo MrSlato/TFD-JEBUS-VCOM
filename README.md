@@ -1,6 +1,9 @@
 # TFD_JEBUS_VCOM Framework
 Cut down TFD framework featuring JEBUS & VCOM AI as core.
 
+### 26/01/2021
+- Added new version of TFD Admin Pannel
+
 ### 03/01/2020 (TFAR -> ACRE)
 
 - Copied the TFD 2021 Framework
